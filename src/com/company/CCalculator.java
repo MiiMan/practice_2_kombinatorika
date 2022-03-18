@@ -55,7 +55,7 @@ public class CCalculator {
                 }
                 break;
             case 3:
-                System.out.print("Введите массив n по k: ");
+                System.out.print("Введите: ");
                 String str = sc.nextLine();
 
                 String[] arr = str.split(" ");
