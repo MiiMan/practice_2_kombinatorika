@@ -8,6 +8,7 @@ public class CCalculator {
 
     public void run() {
         Scanner sc = new Scanner(System.in);
+        System.out.println("Выполнили: Альхеев Геннадий, Бондарь Георгий");
         System.out.println("#####################################");
         System.out.println("############ КАЛЬКУЛЯТОР ############");
         System.out.println("#####################################");
@@ -16,7 +17,7 @@ public class CCalculator {
         System.out.println("1)Сочетания\n2)Размещения\n3)Перестановка");
         System.out.print("Выберите операцию: ");
         int type = sc.nextInt();
-        System.out.print("С перестановками? ");
+        System.out.print("С повторениями? ");
         sc.nextLine();
         String is = sc.nextLine();
         boolean isWR = is.equals("Да");
@@ -66,7 +67,7 @@ public class CCalculator {
                     sum += k[i];
                 }
 
-                if (isWR) {
+                if (!isWR) {
                     System.out.print("Ответ: ");
                     System.out.print(CCalculator.PermutationWR(sum));
                 } else {
